@@ -15,7 +15,7 @@ $gray-5: #474a48;
 
 $blue-light: #1e41d6;
 $blue-dark: #040f3d;
-$linear-gradient-blue: linear-gradient(180deg, #040f3d 0%, #1e41d6 100%);
+$linear-gradient-blue: linear-gradient($blue-light, $blue-dark);
 
 // Utilities
 $border-radius-default: 5px;
