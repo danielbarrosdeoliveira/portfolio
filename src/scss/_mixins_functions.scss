@@ -1,0 +1,11 @@
+// Geral
+$container-width: 1200px;
+
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+@function rem($pixel, $context: 16) {
+  @return calc($pixel / $context) + rem;
+}
