@@ -1,0 +1,106 @@
+.experience {
+  @include container;
+
+  &__subtitle {
+    color: $white-3;
+  }
+
+  &__description {
+    max-width: 40ch;
+    font-size: rem(20);
+    line-height: 1.3;
+    margin-bottom: 60px;
+    color: $gray-5;
+
+    strong {
+      color: $black-3;
+    }
+  }
+
+  &__company {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    background-color: $white-2;
+    margin-bottom: 20px;
+    border-radius: $border-radius-default;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: $linear-gradient-blue;
+      position: absolute;
+      top: 20px;
+      left: -4px;
+    }
+  }
+
+  &__year {
+    position: absolute;
+    top: 21px;
+    left: -160px;
+    color: $gray-5;
+    font-size: rem(14);
+    width: 130px;
+    text-align: right;
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: 1.1;
+    font-weight: bold;
+  }
+
+  &__job-description {
+    font-size: rem(14);
+    line-height: 1.5;
+    color: $gray-5;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: flex-start;
+
+    li {
+      font-size: rem(14);
+      line-height: 1.5;
+      border-radius: $border-radius-default;
+      background-color: $white;
+      padding: 5px 10px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    &__subtitle {
+      color: $black-2;
+      writing-mode: inherit;
+      rotate: inherit;
+    }
+
+    &__description {
+      font-size: rem(18);
+    }
+
+    &__year {
+      position: initial;
+      order: 1;
+      width: initial;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__company {
+      grid-template-columns: 1fr;
+    }
+  }
+}
