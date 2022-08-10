@@ -19,3 +19,14 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.subtitle {
+  font-size: rem(128);
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+
+  @media (max-width: 800px) {
+    font-size: rem(42);
+    text-transform: capitalize;
+  }
+}
