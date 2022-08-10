@@ -1,0 +1,46 @@
+.introduction {
+  @include container;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+
+  &__greeting,
+  &__location {
+    color: $gray-5;
+    font-size: rem(18);
+  }
+
+  &__title {
+    font-size: rem(72);
+    line-height: 1.125;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    &__title {
+      font-size: rem(56);
+    }
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    &__title {
+      font-size: rem(40);
+    }
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      display: none;
+    }
+  }
+}
