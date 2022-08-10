@@ -2,6 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "dev": "yarn gulp",
+    "build": "yarn gulp build"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
