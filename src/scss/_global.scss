@@ -3,3 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: $black-3;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
