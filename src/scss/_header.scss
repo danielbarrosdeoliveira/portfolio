@@ -1,0 +1,38 @@
+.header {
+  @include container;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__menu a {
+    font-size: rem(18);
+    line-height: 1.3;
+    padding: 10px 20px;
+    color: $black-2;
+    display: block;
+  }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+
+    &__menu a {
+      background-color: $white-2;
+      border-radius: $border-radius-default;
+    }
+  }
+}
