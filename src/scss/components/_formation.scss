@@ -11,8 +11,10 @@
   &__subtitle {
     color: $black;
     line-height: initial;
-    align-self: center;
-    align-items: flex-end;
+    align-self: flex-start;
+    justify-self: end;
+
+    rotate: 0deg;
   }
 
   &__description {
