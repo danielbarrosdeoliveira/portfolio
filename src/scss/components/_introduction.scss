@@ -20,6 +20,11 @@
     margin-top: 30px;
   }
 
+  &__img {
+    justify-self: end;
+    width: 360px;
+  }
+
   @media (max-width: 1000px) {
     &__title {
       font-size: rem(56);
