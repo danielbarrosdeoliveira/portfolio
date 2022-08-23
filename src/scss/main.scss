@@ -1,7 +1,8 @@
 @import "variables";
 @import "mixins_functions";
 
-@import "global";
+@import "./global";
 @import "./components/header";
 @import "./components/introduction";
 @import "./components/experience";
+@import "./components/formation";
