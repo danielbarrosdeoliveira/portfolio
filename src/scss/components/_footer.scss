@@ -1,0 +1,98 @@
+.footer {
+  background: $black;
+
+  &__container {
+    @include container;
+    padding: 60px 20px 60px 20px;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 70px;
+  }
+
+  &__description {
+    font-size: rem(20);
+    line-height: 1.5;
+    color: $gray;
+    margin-top: 30px;
+  }
+
+  &__contact {
+    font-size: rem(36);
+    font-weight: bold;
+    text-align: right;
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__copy {
+    color: $gray-4;
+
+    a {
+      color: $gray-4;
+      transition: 0.3s;
+
+      &:hover {
+        color: $gray-3;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__contact {
+      font-size: rem(28);
+    }
+
+    &__description {
+      font-size: rem(18);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__description {
+      font-size: rem(16);
+    }
+
+    &__contact {
+      font-size: rem(24);
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: initial;
+      gap: 40px;
+    }
+
+    &__logo {
+      width: 50px;
+    }
+
+    &__description {
+      font-size: rem(14);
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(16);
+      text-align: left;
+    }
+
+    &__copy {
+      font-size: rem(12);
+    }
+  }
+}
