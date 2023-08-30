@@ -78,6 +78,12 @@
     margin-bottom: 10px;
   }
 
+  &__date {
+    font-size: rem(10);
+    color: $gray-2;
+    margin-bottom: 10px;
+  }
+
   &__extra {
     margin-bottom: 60px;
 
@@ -114,10 +120,10 @@
 
   &__courses {
     margin-bottom: 30px;
+
     h3 {
       &::before {
-        background: url("../../assets/img/formation-courses.svg") no-repeat
-          center center;
+        background: url("../../assets/img/formation-courses.svg") no-repeat center center;
       }
     }
 
@@ -130,8 +136,7 @@
   &__idiom {
     h3 {
       &::before {
-        background: url("../../assets/img/formation-idiom.svg") no-repeat center
-          center;
+        background: url("../../assets/img/formation-idiom.svg") no-repeat center center;
       }
     }
   }
@@ -156,6 +161,7 @@
   }
 
   @media screen and (max-width: 420px) {
+
     &__courses,
     &__idiom {
       li {
