@@ -4,12 +4,11 @@ $container-width: 1200px;
 @mixin container {
   max-width: $container-width;
   margin: 0 auto;
-  padding: 40px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  padding: 40px 24px;
 }
 
 @function rem($pixel, $context: 16) {
-  @return calc($pixel / $context) + rem;
+  @return calc($pixel / $context)+rem;
 }
