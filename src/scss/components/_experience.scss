@@ -3,6 +3,8 @@
 
   &__subtitle {
     color: $white-3;
+    writing-mode: vertical-lr;
+    rotate: 360deg;
   }
 
   &__description {
