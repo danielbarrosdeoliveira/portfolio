@@ -1,8 +1,8 @@
 <h1 align="center">Projeto Portfolio</h1>
 
-Projeto em desenvolvimento constante...
+## Status
 
-Hospedado na Netlify com CI/CD integrado. [![Netlify Status](https://api.netlify.com/api/v1/badges/67f5823d-3e14-431e-a80b-b54206176f16/deploy-status)](https://app.netlify.com/sites/danieloliveiradev/deploys)
+Em desenvolvimento...
 
 ## ✨ Tecnologias
 
