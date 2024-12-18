@@ -19,9 +19,9 @@ Em desenvolvimento...
 
 ## 💻 Projeto
 
-Esse projeto é um site/CV chamo de portfolio, pois em breve irei adicionar a seção de projetos, contendo meu portfolio, apesar de parecer simples, foi utilizado ferramentas poderosas como SASS e Gulp, além de pacotes/libs como BrowserSync que auxilia no desenvolvimento, criando um servidor web para testar a aplicação.
+Esse projeto é um site/CV chamo de portfolio, pois irá contar com uma seção de projetos, apesar de parecer simples, foi utilizado ferramentas poderosas como SASS e Gulp, além de pacotes/libs como BrowserSync que auxilia no desenvolvimento, criando um servidor web para testar a aplicação localment e manter sincronizado durante as alterações.
 
-### Próximas funcionalidades (Todo)
+### Próximas funcionalidades (ToDo)
 
 - [ ] Animação para suavizar a navegação até as seções do site (animation scroll smooth);
 - [ ] Menu hamburguer para dispositivos móveis;
